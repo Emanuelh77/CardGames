@@ -22,8 +22,7 @@ def deal(deck):
             card = 'K'
         elif card == 14:
             card = 'A'
-        else:
-            hand.append(card)
+        hand.append(card)
     return hand
 
 #returns the total of the hand
@@ -71,9 +70,8 @@ def print_results(dealerHand, playerHand):
 def play_again():
     option = input("Would you like to play again? (Y/N): ").upper()
     if option == 'Y':
-        dealerHand = []
-        playerHand = []
-        deck = [2,3,4,5,6,7,8,9,10,11,12,13,14]*4
+        global deck
+        deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] * 4
         game()
     else:
         print("Thanks for playing, see you!")
