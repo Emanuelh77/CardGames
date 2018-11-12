@@ -62,7 +62,7 @@ def clear():
 
 #function displays the hands of the dealer and player
 def print_results(dealerHand, playerHand):
-    clear()
+    #clear()
     print("The dealer has a" + str(dealerHand) + " for a total of " + str(hand_total(dealerHand)))
     print("You have a " + str(playerHand) + " for a total of " + str(hand_total(playerHand)))
 
@@ -125,7 +125,6 @@ def game():
         print("You have a " + str(playerHand) + " for a total of " + str(hand_total(playerHand)))
         blackjack(dealerHand, playerHand)
         choice = input("Do you want to [H]it, [S]tand, or [Q]uit: ").lower()
-        clear()
         if choice == "h":
             hit(playerHand)
             while hand_total(dealerHand) < 17:
