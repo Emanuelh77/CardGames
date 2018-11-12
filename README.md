@@ -13,7 +13,7 @@ Make sure to be running Python 3.7 or higher in your system
 To run the War game type the following:
 
 ```
-python WarGame.py
+python WarCardGame.py
 ```
 To run the blackjack game use the following:
 
